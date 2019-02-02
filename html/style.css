@@ -1,0 +1,177 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    height: 100%;
+}
+
+.site-wrapper {
+    height: 100%;
+    position: relative;
+}
+
+.page {
+    height: 100%;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    max-width: 1366px;
+    position: relative;
+}
+
+.page-title {
+    padding: 10px;
+    background-color: #ddd;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    overflow: hidden;
+    position: absolute;
+    cursor: default;
+}
+
+.left-sidebar {
+    left: 0;
+    top: 80px;
+    width: 170px;
+    bottom: 16px;
+    cursor: default;
+    background: #fff;
+    position: absolute;
+    overflow: auto;
+}
+
+.right-sidebar {
+    cursor: default;
+    background: #fff;
+    position: absolute;
+    overflow: auto;
+    right: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 12px;
+    top: 80px;
+    width: 280px;
+    bottom: 15px;
+}
+
+.page-body {
+    position: absolute;
+    cursor: default;
+    right: 280px;
+    left: 170px;
+    top: 80px;
+    bottom: 0px;
+    -ms-touch-action: none;
+    touch-action: none;
+    overflow-y: auto;
+}
+
+#PractitionersList {}
+
+div#PractitionersList > h3 {
+    padding-left: 10px;
+}
+
+#PractitionersList ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#PractitionersList ul li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#PractitionersList ul li:hover {
+    background-color: #eee;
+}
+
+#AppointmentsByMonth {padding: 10px;min-width: 533px;max-width: 768px;}
+
+#AppointmentsByMonth > h2 {margin: 0;}
+
+#AppointmentsByMonth-Inner {
+    padding-left: 195px;
+    position: relative;
+    margin-top: 15px;
+}
+
+#Months {
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    width: 180px;
+}
+
+#Months ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#Months ul li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#Months ul li:hover {
+    background-color: #ddd;
+}
+
+#Appointments {
+    overflow-y: auto;
+    -webkit-overflow-touch: scroll;
+}
+
+#Appointments .monthly {
+}
+
+#Appointments .monthly h3 {
+    margin: 10px 0 5px 0;
+}
+
+#Appointments .monthly table {
+    width: 100%;
+    text-align: left;
+    background-color: #fbfbfb;
+    border-spacing: 0;
+}
+
+#Appointments .monthly table thead tr:first-child {
+    background-color: #d5d2fd;
+}
+
+#Appointments .monthly table thead tr:first-child th {
+    padding: 6px 5px;
+}
+
+#Appointments .monthly table thead tr:first-child th:first-child {
+}
+
+#Appointments .monthly table tr td {
+    padding: 5px 5px;
+}
+
+#Appointments .monthly tbody tr {
+    cursor: pointer;
+}
+
+#Appointments .monthly tbody tr:hover {
+    background-color: #e2e2e2;
+}
+
+#AppointmentDetails {
+    margin-left: 15px;
+    margin-top: 40px;
+}
+
+#AppointmentDetails table {
+    border-spacing: 0;
+}
+
+#AppointmentDetails table tr td {
+    padding: 4px 5px;
+}

@@ -1,0 +1,293 @@
+.main-nav li .glyphicon {
+    margin-right: 10px;
+}
+
+/* Highlighting rules for nav menu items */
+.main-nav li a.active,
+.main-nav li a.active:hover,
+.main-nav li a.active:focus {
+    background-color: #4189C7;
+    color: white;
+}
+
+/* Keep the nav menu independent of scrolling and on top of other items */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@media (max-width: 767px) {
+    /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+    body {
+        padding-top: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    /* On small screens, convert the nav menu to a vertical sidebar */
+    .main-nav {
+        height: 100%;
+        width: calc(25% - 20px);
+    }
+    .main-nav .navbar {
+        border-radius: 0px;
+        border-width: 0px;
+        height: 100%;
+    }
+    .main-nav .navbar-header {
+        float: none;
+    }
+    .main-nav .navbar-collapse {
+        border-top: 1px solid #444;
+        padding: 0px;
+    }
+    .main-nav .navbar ul {
+        float: none;
+    }
+    .main-nav .navbar li {
+        float: none;
+        font-size: 15px;
+        margin: 6px;
+    }
+    .main-nav .navbar li a {
+        padding: 10px 16px;
+        border-radius: 4px;
+    }
+    .main-nav .navbar a {
+        /* If a menu item's text is too long, truncate it */
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+
+/*----------------------------------------------------*/
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    height: 100%;
+}
+
+.page-title {
+    z-index: 99999;
+}
+
+.page-title h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#ReportPage h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#ReportPage h3 small {
+    font-size: 13px
+}
+
+#ReportPage h2 {
+    font-size: 18px;
+    font-weight: bold;
+    font-size: 13
+}
+
+#ReportPage .site-wrapper {
+    height: 100%;
+    position: relative;
+}
+
+.page {
+    height: 100%;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    max-width: 1366px;
+    position: relative;
+}
+
+.page-title {
+    padding: 10px;
+    background-color: #ddd;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    overflow: hidden;
+    position: absolute;
+    cursor: default;
+    z-index: 999999;
+}
+
+.left-sidebar {
+    left: 0;
+    top: 80px;
+    width: 170px;
+    bottom: 16px;
+    cursor: default;
+    background: #fff;
+    position: absolute;
+    overflow: auto;
+}
+
+.right-sidebar {
+    cursor: default;
+    background: #fff;
+    position: absolute;
+    overflow: auto;
+    right: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 12px;
+    top: 80px;
+    width: 280px;
+    bottom: 15px;
+}
+
+.page-body {
+    position: absolute;
+    cursor: default;
+    right: 280px;
+    left: 170px;
+    top: 80px;
+    bottom: 0px;
+    -ms-touch-action: none;
+    touch-action: none;
+    overflow-y: auto;
+}
+
+#PractitionerList > h3 {
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#NoPractitionerSelectedMessage {
+    margin-top: 20px;
+}
+
+#PractitionerList ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#PractitionerList ul li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#PractitionerList ul li:hover {
+    background-color: #EEEEEE;
+}
+
+#PractitionerList ul li.active {
+    background-color: #DDDDDD;
+}
+
+#AppointmentsByMonth {
+    padding: 10px;
+    min-width: 533px;
+    max-width: 768px;
+}
+
+#AppointmentsByMonth > h2 {
+    margin: 0;
+}
+
+#AppointmentsByMonth > h2 > small {
+    font-size: 13px
+}
+
+#AppointmentsByMonth-Inner {
+    padding-left: 195px;
+    position: relative;
+    margin-top: 15px;
+}
+
+#Months {
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    width: 180px;
+}
+
+#Months ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#Months ul li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#Months ul li:hover {
+    background-color: #DDDDDD;
+}
+
+#Months ul li.active {
+    background-color: #DDDDDD
+}
+
+#Appointments {
+    overflow-y: auto;
+    -webkit-overflow-touch: scroll;
+}
+
+#Appointments .monthly h3 {
+    margin: 10px 0 5px 0;
+}
+
+#Appointments .monthly table {
+    width: 100%;
+    text-align: left;
+    background-color: #fbfbfb;
+    border-spacing: 0;
+}
+
+#Appointments .monthly table thead tr:first-child {
+    background-color: #d5d2fd;
+}
+
+#Appointments .monthly table thead tr:first-child th {
+    padding: 6px 5px;
+}
+
+#Appointments .monthly table tr td {
+    padding: 5px 5px;
+}
+
+#Appointments .monthly tbody tr {
+    cursor: pointer;
+}
+
+#Appointments .monthly tbody tr.active,
+#Appointments .monthly tbody tr.active:hover {
+    background-color: #DDDDDD;
+}
+
+#Appointments .monthly tbody tr:hover {
+    background-color: #EEEEEE;
+}
+
+#AppointmentDetails {
+    margin-left: 15px;
+    margin-top: 40px;
+}
+
+#AppointmentDetails table {
+    border-spacing: 0;
+}
+
+#AppointmentDetails table tr td {
+    padding: 4px 5px;
+}
+
